@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#010134"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textColor="@color/label"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/IuserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Usename here..."
+        android:textColor="@color/textfield"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:requiresFadingEdge="vertical"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="@color/label"
+        android:textSize="18dp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/Iphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="+256789310641"
+        android:textColor="@color/textfield"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:requiresFadingEdge="vertical"
+        android:textStyle="bold"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/label"
+        android:textSize="18dp"
+        android:layout_gravity="left"/>
+
+    <EditText
+        android:id="@+id/IEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="someone@gmail.com"
+        android:textColor="@color/textfield"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:requiresFadingEdge="vertical"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/label"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_gravity="left"/>
+    <EditText
+        android:id="@+id/IPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_field"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:textColor="@color/textfield"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"
+        android:requiresFadingEdge="vertical"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignUp"
+        style="@style/labels"
+        android:textSize="25sp"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:onClick="toLogin"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have Account? Login"
+        android:textColor="@color/label"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+       android:layout_marginTop="20dp"
+        android:onClick="toLogin"
+        />
+</LinearLayout>
